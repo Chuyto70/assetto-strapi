@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_products_sizes",
+  "info": {
+    "displayName": "Sizes",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "size": {
+      "type": "string",
+      "required": true
+    },
+    "quantity": {
+      "type": "integer",
+      "required": true,
+      "min": -1
+    }
+  }
+}

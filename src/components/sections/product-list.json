@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_sections_products_list",
+  "info": {
+    "displayName": "Products list"
+  },
+  "options": {},
+  "attributes": {
+    "Filters": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+    "collectionName": "components_seo_seos",
+    "info": {
+      "displayName": "Seo",
+      "icon": "info",
+      "description": ""
+    },
+    "options": {},
+    "attributes": {
+      "template_title": {
+        "type": "string",
+        "required": false,
+        "unique": true
+      },
+      "title_suffix": {
+        "type": "string"
+      },
+      "meta_description": {
+        "type": "text"
+      }
+    }
+  }
+  

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_sections_products_selected_list",
+  "info": {
+    "displayName": "Products selected list",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    },
+    "Filters": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

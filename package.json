@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@strapi/plugin-color-picker": "^4.10.1",
     "@strapi/plugin-graphql": "4.10.1",
     "@strapi/plugin-i18n": "4.10.1",
     "@strapi/plugin-users-permissions": "4.10.1",

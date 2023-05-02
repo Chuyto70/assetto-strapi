@@ -101,7 +101,7 @@
       },
       "type": "datetime"
     },
-    "images": {
+    "medias": {
       "type": "media",
       "multiple": true,
       "required": true,
@@ -115,7 +115,7 @@
         }
       }
     },
-    "color": {
+    "colors": {
       "type": "component",
       "repeatable": true,
       "pluginOptions": {

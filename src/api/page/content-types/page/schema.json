@@ -16,10 +16,26 @@
     }
   },
   "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "private": true
+    },
     "title": {
       "type": "string",
       "required": true,
-      "unique": false
+      "unique": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "slug": {
       "pluginOptions": {
@@ -40,7 +56,8 @@
       },
       "type": "dynamiczone",
       "components": [
-        "sections.product-selected-list"
+        "sections.product-selected-list",
+        "sections.product-list"
       ]
     },
     "metadata": {

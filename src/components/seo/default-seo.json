@@ -1,32 +1,25 @@
 {
-    "collectionName": "components_seo_default_seos",
-    "info": {
-      "displayName": "defaultSeo",
-      "icon": "info",
-      "description": ""
+  "collectionName": "components_seo_default_seos",
+  "info": {
+    "displayName": "defaultSeo",
+    "icon": "info",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Alhéna title",
+      "required": true
     },
-    "options": {},
-    "attributes": {
-      "title": {
-        "type": "string",
-        "default": "Alhéna title",
-        "required": true
-      },
-      "siteName": {
-        "type": "string",
-        "default": "Alhéna sitename",
-        "required": true
-      },
-      "description": {
-        "type": "text",
-        "required": true
-      },
-      "url": {
-        "type": "string",
-        "required": true,
-        "regex": "^((http|https):\\/\\/)?(www[0-9]\\.)?(([A-Za-z0-9_-])+\\.{1})+([A-Za-z]{2,4}|\\<[^<>]+\\>)(\\/([A-Za-z0-9_-])+)*(\\/)?$",
-        "default": "https://sygix.fr"
-      }
+    "siteName": {
+      "type": "string",
+      "default": "Alhéna sitename",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
     }
   }
-  
+}

@@ -19,11 +19,22 @@
     "name": {
       "pluginOptions": {
         "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "required": true,
+      "private": true
+    },
+    "title": {
+      "pluginOptions": {
+        "i18n": {
           "localized": true
         }
       },
       "type": "string",
-      "required": true
+      "required": true,
+      "private": false
     },
     "slug": {
       "pluginOptions": {
@@ -60,6 +71,28 @@
       "relation": "manyToMany",
       "target": "api::product.product",
       "mappedBy": "categories"
+    },
+    "content": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "sections.single-product"
+      ]
+    },
+    "metadata": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "seo.seo",
+      "required": true
     }
   }
 }

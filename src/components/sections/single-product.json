@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_sections_single_products",
+  "info": {
+    "displayName": "SingleProduct"
+  },
+  "options": {},
+  "attributes": {
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    }
+  }
+}

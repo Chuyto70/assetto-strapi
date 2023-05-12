@@ -11,7 +11,7 @@
       "relation": "oneToMany",
       "target": "api::product.product"
     },
-    "Filters": {
+    "filters": {
       "type": "boolean",
       "default": false,
       "required": true

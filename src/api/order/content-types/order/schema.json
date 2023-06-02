@@ -1,0 +1,116 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "payment_intent_id": {
+      "type": "string",
+      "required": false,
+      "unique": true
+    },
+    "billing_name": {
+      "type": "string",
+      "regex": "^[A-Za-zÀ-ÿ-]{2,}(?:\\s[A-Za-zÀ-ÿ-]{2,})?$",
+      "required": false
+    },
+    "billing_email": {
+      "type": "email",
+      "required": false
+    },
+    "billing_city": {
+      "type": "string",
+      "regex": "^[a-zA-ZÀ-ÿ\\s\\-']+$",
+      "required": false
+    },
+    "billing_country": {
+      "type": "string",
+      "regex": "^[a-zA-ZÀ-ÿ\\s\\-'()]+$",
+      "required": false
+    },
+    "billing_line1": {
+      "type": "string",
+      "regex": "^[0-9A-Za-zÀ-ÿ\\s\\-\\',\\.]+$",
+      "required": false
+    },
+    "billing_line2": {
+      "type": "string",
+      "regex": "^[0-9A-Za-zÀ-ÿ\\s\\-\\',\\.]+$"
+    },
+    "billing_postal_code": {
+      "type": "string",
+      "regex": "^.+$",
+      "required": false
+    },
+    "billing_state": {
+      "type": "string",
+      "regex": "^[a-zA-ZÀ-ÿ\\s\\-'()]+$"
+    },
+    "shipping_name": {
+      "type": "string",
+      "regex": "^[A-Za-zÀ-ÿ-]{2,}(?:\\s[A-Za-zÀ-ÿ-]{2,})?$",
+      "required": false
+    },
+    "shipping_email": {
+      "type": "email",
+      "required": false
+    },
+    "shipping_city": {
+      "type": "string",
+      "regex": "^[a-zA-ZÀ-ÿ\\s\\-']+$",
+      "required": false
+    },
+    "shipping_country": {
+      "type": "string",
+      "regex": "^[a-zA-ZÀ-ÿ\\s\\-'()]+$",
+      "required": false
+    },
+    "shipping_line1": {
+      "type": "string",
+      "regex": "^[0-9A-Za-zÀ-ÿ\\s\\-\\',\\.]+$",
+      "required": false
+    },
+    "shipping_line2": {
+      "type": "string",
+      "regex": "^[0-9A-Za-zÀ-ÿ\\s\\-\\',\\.]+$"
+    },
+    "shipping_postal_code": {
+      "type": "string",
+      "regex": "^.+$",
+      "required": false
+    },
+    "shipping_state": {
+      "type": "string",
+      "regex": "^[a-zA-ZÀ-ÿ\\s\\-'()]+$"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "succeeded",
+        "pending",
+        "checkout",
+        "failed",
+        "canceled"
+      ],
+      "required": true,
+      "default": "checkout"
+    },
+    "amount": {
+      "type": "decimal",
+      "min": 0,
+      "required": true
+    },
+    "products": {
+      "type": "json",
+      "required": true
+    }
+  }
+}

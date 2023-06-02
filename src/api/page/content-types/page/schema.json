@@ -58,7 +58,8 @@
       "components": [
         "sections.product-selected-list",
         "sections.product-list",
-        "sections.cart"
+        "sections.cart",
+        "sections.checkout"
       ]
     },
     "metadata": {

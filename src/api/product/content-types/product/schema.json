@@ -72,9 +72,9 @@
           "localized": false
         }
       },
-      "type": "float",
+      "type": "decimal",
       "required": true,
-      "min": 0
+      "min": 0.5
     },
     "sale_price": {
       "pluginOptions": {
@@ -82,8 +82,8 @@
           "localized": false
         }
       },
-      "type": "float",
-      "min": 0
+      "type": "decimal",
+      "min": 0.5
     },
     "date_on_sale_from": {
       "pluginOptions": {

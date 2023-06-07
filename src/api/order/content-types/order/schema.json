@@ -17,13 +17,13 @@
       "required": false,
       "unique": true
     },
+    "email": {
+      "type": "email",
+      "required": false
+    },
     "billing_name": {
       "type": "string",
       "regex": "^[A-Za-zÀ-ÿ-]{2,}(?:\\s[A-Za-zÀ-ÿ-]{2,})?$",
-      "required": false
-    },
-    "billing_email": {
-      "type": "email",
       "required": false
     },
     "billing_city": {
@@ -57,10 +57,6 @@
     "shipping_name": {
       "type": "string",
       "regex": "^[A-Za-zÀ-ÿ-]{2,}(?:\\s[A-Za-zÀ-ÿ-]{2,})?$",
-      "required": false
-    },
-    "shipping_email": {
-      "type": "email",
       "required": false
     },
     "shipping_city": {

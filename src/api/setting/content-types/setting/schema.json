@@ -39,6 +39,19 @@
       },
       "component": "seo.default-seo",
       "required": true
+    },
+    "payment_provider": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "STRIPE"
+      ],
+      "default": "STRIPE",
+      "required": true
     }
   }
 }

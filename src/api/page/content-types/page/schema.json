@@ -59,7 +59,8 @@
         "sections.product-selected-list",
         "sections.product-list",
         "sections.cart",
-        "sections.checkout-address"
+        "sections.checkout-tunnel",
+        "sections.checkout-complete"
       ]
     },
     "metadata": {

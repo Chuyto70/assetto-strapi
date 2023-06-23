@@ -1,12 +1,11 @@
 {
-  "collectionName": "components_sections_carts",
+  "collectionName": "components_sections_checkouts_complete",
   "info": {
-    "displayName": "Cart",
-    "description": ""
+    "displayName": "CheckoutComplete"
   },
   "options": {},
   "attributes": {
-    "checkout_page": {
+    "cart_page": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::page.page"

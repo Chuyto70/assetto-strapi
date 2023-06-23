@@ -91,6 +91,7 @@
       "type": "enumeration",
       "enum": [
         "succeeded",
+        "processing",
         "pending",
         "checkout",
         "failed",

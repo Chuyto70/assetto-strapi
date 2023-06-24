@@ -1,13 +1,13 @@
 {
   "dependencies": {
-    "@strapi/plugin-color-picker": "^4.10.1",
-    "@strapi/plugin-graphql": "4.10.1",
-    "@strapi/plugin-i18n": "4.10.1",
-    "@strapi/plugin-users-permissions": "4.10.1",
-    "@strapi/strapi": "4.10.1",
+    "@strapi/plugin-color-picker": "^4.11.2",
+    "@strapi/plugin-graphql": "4.11.2",
+    "@strapi/plugin-i18n": "4.11.2",
+    "@strapi/plugin-users-permissions": "4.11.2",
+    "@strapi/strapi": "4.11.2",
     "better-sqlite3": "8.0.1",
     "lodash.set": "^4.3.2",
-    "mime-types": "^2.1.27"
+    "mime-types": "^2.1.35"
   },
   "name": "alhena-strapi",
   "private": true,
@@ -20,7 +20,7 @@
     "strapi": "strapi"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Sygix"
   },
   "strapi": {
     "uuid": "6b8ac885-66de-4b34-b96e-ccc07a258f2d",

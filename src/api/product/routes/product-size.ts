@@ -5,8 +5,8 @@
 const routes = [
   {
     method: 'PUT',
-    path: '/products/:productId/sizes/:sizeId',
-    handler: 'product-size.updateSize',
+    path: '/product-size/:sizeId',
+    handler: 'product-size.update',
     config: {
       policies: [],
     },

@@ -3989,7 +3989,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@strapi/utils@npm:4.11.2":
+"@strapi/utils@npm:4.11.2, @strapi/utils@npm:^4.11.2":
   version: 4.11.2
   resolution: "@strapi/utils@npm:4.11.2"
   dependencies:
@@ -4942,6 +4942,7 @@ __metadata:
     "@strapi/plugin-i18n": 4.11.2
     "@strapi/plugin-users-permissions": 4.11.2
     "@strapi/strapi": 4.11.2
+    "@strapi/utils": ^4.11.2
     better-sqlite3: 8.0.1
     lodash.set: ^4.3.2
     mime-types: ^2.1.35

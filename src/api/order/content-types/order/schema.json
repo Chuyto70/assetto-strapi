@@ -18,73 +18,134 @@
       "unique": true
     },
     "email": {
-      "type": "email",
-      "required": false
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
+      "required": false,
+      "regex": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
     },
     "billing_name": {
-      "type": "string",
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
       "regex": "^[A-Za-zÀ-ÿ-]{2,}(?:\\s[A-Za-zÀ-ÿ-]{2,})?$",
       "required": false
     },
     "billing_city": {
-      "type": "string",
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
       "regex": "^[a-zA-ZÀ-ÿ\\s\\-']+$",
       "required": false
     },
     "billing_country": {
-      "type": "string",
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
       "regex": "^[a-zA-ZÀ-ÿ\\s\\-'()]+$",
       "required": false
     },
     "billing_line1": {
-      "type": "string",
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
       "regex": "^[0-9A-Za-zÀ-ÿ\\s\\-\\',\\.]+$",
       "required": false
     },
     "billing_line2": {
-      "type": "string",
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
       "regex": "^[0-9A-Za-zÀ-ÿ\\s\\-\\',\\.]+$"
     },
     "billing_postal_code": {
-      "type": "string",
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
       "regex": "^.+$",
       "required": false
     },
     "billing_state": {
-      "type": "string",
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
       "regex": "^[a-zA-ZÀ-ÿ\\s\\-'()]+$"
     },
     "shipping_name": {
-      "type": "string",
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
       "regex": "^[A-Za-zÀ-ÿ-]{2,}(?:\\s[A-Za-zÀ-ÿ-]{2,})?$",
       "required": false
     },
     "shipping_city": {
-      "type": "string",
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
       "regex": "^[a-zA-ZÀ-ÿ\\s\\-']+$",
       "required": false
     },
     "shipping_country": {
-      "type": "string",
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
       "regex": "^[a-zA-ZÀ-ÿ\\s\\-'()]+$",
       "required": false
     },
     "shipping_line1": {
-      "type": "string",
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
       "regex": "^[0-9A-Za-zÀ-ÿ\\s\\-\\',\\.]+$",
       "required": false
     },
     "shipping_line2": {
-      "type": "string",
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
       "regex": "^[0-9A-Za-zÀ-ÿ\\s\\-\\',\\.]+$"
     },
     "shipping_postal_code": {
-      "type": "string",
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
       "regex": "^.+$",
       "required": false
     },
     "shipping_state": {
-      "type": "string",
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
       "regex": "^[a-zA-ZÀ-ÿ\\s\\-'()]+$"
     },
     "status": {

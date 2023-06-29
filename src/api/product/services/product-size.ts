@@ -17,6 +17,7 @@ export default factories.createCoreService('api::product.product', ({ strapi }) 
       });
       if (data.hasOwnProperty('quantity')) {
         const dataQty = data['quantity'];
+        if (size.quantity === -1) throw new ApplicationError('You cannot update an infinite quantity (update from the backend directly)');
         if ((size.quantity + dataQty) < 0) throw new ApplicationError('You cannot go under 0 for the quantity');
         data['quantity'] = size.quantity + dataQty;
       }

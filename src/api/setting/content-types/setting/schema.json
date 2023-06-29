@@ -52,6 +52,14 @@
       ],
       "default": "STRIPE",
       "required": true
+    },
+    "stripe_secret_key": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string"
     }
   }
 }

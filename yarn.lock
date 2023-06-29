@@ -3516,7 +3516,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@strapi/design-system@npm:1.8.0":
+"@strapi/design-system@npm:1.8.0, @strapi/design-system@npm:^1.4.1":
   version: 1.8.0
   resolution: "@strapi/design-system@npm:1.8.0"
   dependencies:
@@ -3601,6 +3601,31 @@ __metadata:
     react-router-dom: ^5.3.4
     styled-components: ^5.3.3
   checksum: b5009b88f7a4dcca8b12137a510b5540049abffb05a1374ab6d53b51e30aef7dcbd1a5c72ac249a35e7dd6f57cc646eac7639abb546aebad66cd3625bd2551da
+  languageName: node
+  linkType: hard
+
+"@strapi/helper-plugin@npm:^4.5.4":
+  version: 4.11.3
+  resolution: "@strapi/helper-plugin@npm:4.11.3"
+  dependencies:
+    axios: 1.4.0
+    date-fns: 2.30.0
+    formik: ^2.4.0
+    immer: 9.0.19
+    lodash: 4.17.21
+    prop-types: ^15.8.1
+    qs: 6.11.1
+    react-helmet: ^6.1.0
+    react-intl: 6.4.1
+    react-select: 5.7.0
+  peerDependencies:
+    "@strapi/design-system": 1.8.0
+    "@strapi/icons": 1.8.0
+    react: ^17.0.0 || ^18.0.0
+    react-dom: ^17.0.0 || ^18.0.0
+    react-router-dom: ^5.3.4
+    styled-components: ^5.3.3
+  checksum: f72ab85bd77a999b71d56f4c71fee69d174b23ee2823ae7e2b63b42088ccfeff10c47ac9bb986bc4f271675374c31af1fa50f97e380301d207c0e0034acb31c4
   languageName: node
   linkType: hard
 
@@ -4375,6 +4400,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:>=8.1.0":
+  version: 20.3.2
+  resolution: "@types/node@npm:20.3.2"
+  checksum: 5929ce2b9b12b1e2a2304a0921a953c72a81f5753ad39ac43b99ce6312fbb2b4fb5bc6b60d64a2550704e3223cd5de1299467d36085ac69888899db978f2653a
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:^10.1.0":
   version: 10.17.60
   resolution: "@types/node@npm:10.17.60"
@@ -4946,6 +4978,8 @@ __metadata:
     better-sqlite3: 8.0.1
     lodash.set: ^4.3.2
     mime-types: ^2.1.35
+    strapi-plugin-encryptable-field: ^1.1.3
+    stripe: ^12.10.0
   languageName: unknown
   linkType: soft
 
@@ -12158,7 +12192,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"qs@npm:^6.10.2, qs@npm:^6.10.3, qs@npm:^6.4.0, qs@npm:^6.5.2, qs@npm:^6.9.6":
+"qs@npm:^6.10.2, qs@npm:^6.10.3, qs@npm:^6.11.0, qs@npm:^6.4.0, qs@npm:^6.5.2, qs@npm:^6.9.6":
   version: 6.11.2
   resolution: "qs@npm:6.11.2"
   dependencies:
@@ -13752,6 +13786,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"strapi-plugin-encryptable-field@npm:^1.1.3":
+  version: 1.1.3
+  resolution: "strapi-plugin-encryptable-field@npm:1.1.3"
+  dependencies:
+    "@strapi/design-system": ^1.4.1
+    "@strapi/helper-plugin": ^4.5.4
+  peerDependencies:
+    "@strapi/strapi": ^4.4.0
+  checksum: 1d1e64421be3b56079ace47b0442866f65894488821f4a907f9ebd67e3555a20e63108230a49509e41cc7f115f1886fb886fba84d8c132ca5db8e5b7c0539501
+  languageName: node
+  linkType: hard
+
 "stream-chain@npm:2.2.5, stream-chain@npm:^2.2.5":
   version: 2.2.5
   resolution: "stream-chain@npm:2.2.5"
@@ -13890,6 +13936,16 @@ __metadata:
   version: 2.0.1
   resolution: "strip-json-comments@npm:2.0.1"
   checksum: 1074ccb63270d32ca28edfb0a281c96b94dc679077828135141f27d52a5a398ef5e78bcf22809d23cadc2b81dfbe345eb5fd8699b385c8b1128907dec4a7d1e1
+  languageName: node
+  linkType: hard
+
+"stripe@npm:^12.10.0":
+  version: 12.10.0
+  resolution: "stripe@npm:12.10.0"
+  dependencies:
+    "@types/node": ">=8.1.0"
+    qs: ^6.11.0
+  checksum: d97ce28e09f95fb6682e683b65b5e56dce60103dbcbbcd90aeb9564eba63433860c8489e6d7c3d213094c58737559afceaa6961c5c97f83beb7c5b22d8ea0cbe
   languageName: node
   linkType: hard
 

@@ -9,7 +9,7 @@ const { ApplicationError } = utils.errors;
 
 // Create the default service
 export default factories.createCoreService('api::product.product', ({ strapi }) => ({
-    //Creating the update custom service
+  //Creating the update custom service
   update: async (sizeId, data = {}) => {
 
     const knex = strapi.db.connection;
@@ -36,6 +36,37 @@ export default factories.createCoreService('api::product.product', ({ strapi }) 
     } catch (error) {
       await transaction.rollback();
       throw new ApplicationError('Something went wrong while updating product-size service', { error });
+    }
+  },
+
+  //Creating the updateMultiple custom service
+  updateMany: async (sizeIds, datas = [{}]) => {
+
+    const knex = strapi.db.connection;
+    const transaction = await knex.transaction();
+
+    try {
+      let returning = [];
+      for (let i = 0; i < sizeIds.length; i++){
+        const updateQuery = transaction('components_products_sizes').where('id', sizeIds[i]);
+
+        if (datas[i].hasOwnProperty('quantity')) {
+          const { quantity } = await transaction('components_products_sizes').select('quantity').where({ id: sizeIds[i] }).first();
+          const dataQty = datas[i]['quantity'];
+          updateQuery.andWhere('quantity', '>', -1);
+          if ((quantity + dataQty) < 0) continue;
+          if (dataQty < 0) updateQuery.andWhere('quantity', '>=', dataQty);
+          datas[i]['quantity'] = quantity + dataQty;
+        }
+  
+        const res = await updateQuery.update(datas[i]).returning(Object.keys(datas[i]));
+        returning = [...returning, ...res];
+      }
+      await transaction.commit();
+      return returning;
+    } catch (error) {
+      await transaction.rollback();
+      throw new ApplicationError('Something went wrong while updating product-size service', { error: error });
     }
   },
 }));

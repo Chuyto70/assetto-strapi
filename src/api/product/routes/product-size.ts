@@ -11,6 +11,14 @@ const routes = [
       policies: [],
     },
   },
+  {
+    method: 'PUT',
+    path: '/product-sizes/',
+    handler: 'product-size.updateMany',
+    config: {
+      policies: [],
+    },
+  },
 ];
 
 export default { routes };

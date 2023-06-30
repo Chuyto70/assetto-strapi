@@ -39,7 +39,7 @@ export default factories.createCoreService('api::product.product', ({ strapi }) 
     }
   },
 
-  //Creating the updateMultiple custom service
+  //Creating the updateMany custom service
   updateMany: async (sizeIds, datas = [{}]) => {
 
     const knex = strapi.db.connection;

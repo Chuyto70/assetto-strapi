@@ -44,7 +44,7 @@ export const productSize = (strapi) => ({ nexus }) => {
             },
             'Mutation.updateManyProductSize': {
                 auth: {
-                    scope: ['api::product.product-size.update'] //!temp should be updateMultiple
+                    scope: ['api::product.product-size.updateMany']
                 }
             }
         }

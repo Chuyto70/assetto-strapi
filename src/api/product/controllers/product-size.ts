@@ -16,5 +16,16 @@ export default factories.createCoreController('api::product.product', ({ strapi 
     const update = await strapi.service('api::product.product-size').update(sizeId, data);
     // Sending the response
     ctx.send(update);
-  }
+  },
+
+  async updateMany(ctx) {
+    // Getting the data to update from the request body
+    const { sizeIds, datas } = ctx.request.body;
+    if (!sizeIds) return ctx.badRequest('Missing \"sizeIds\" payload in the request body');
+    if (!datas) return ctx.badRequest('Missing \"datas\" payload in the request body');
+    // Calling the custom service
+    const update = await strapi.service('api::product.product-size').updateMany(sizeIds, datas);
+    // Sending the response
+    ctx.send(update);
+  },
 }));

@@ -18,11 +18,14 @@ export default factories.createCoreService('api::product.product', ({ strapi }) 
     try {
       const updateQuery = transaction('components_products_sizes').where('id', sizeId);
       
-      if (data.hasOwnProperty('quantity')) {
+      updateQuantity: if (data.hasOwnProperty('quantity')) {
         const { quantity } = await transaction('components_products_sizes').select('quantity').where({ id: sizeId }).first();
         const dataQty = data['quantity'];
         updateQuery.andWhere('quantity', '>', -1);
-        if ((quantity + dataQty) < 0) throw new ApplicationError('You cannot go under 0 for the quantity');
+        if ((quantity + dataQty) < 0) {
+          data['quantity'] = 0;
+          break updateQuantity;
+        }
         if (dataQty < 0) updateQuery.andWhere('quantity', '>=', dataQty);
         data['quantity'] = quantity + dataQty;
       }

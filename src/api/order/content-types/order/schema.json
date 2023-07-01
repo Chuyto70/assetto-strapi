@@ -84,8 +84,7 @@
       "options": {
         "hint": null
       },
-      "customField": "plugin::encryptable-field.encryptable-field",
-      "regex": "^[a-zA-ZÀ-ÿ\\s\\-'()]+$"
+      "customField": "plugin::encryptable-field.encryptable-field"
     },
     "shipping_name": {
       "type": "customField",
@@ -145,8 +144,7 @@
       "options": {
         "hint": null
       },
-      "customField": "plugin::encryptable-field.encryptable-field",
-      "regex": "^[a-zA-ZÀ-ÿ\\s\\-'()]+$"
+      "customField": "plugin::encryptable-field.encryptable-field"
     },
     "status": {
       "type": "enumeration",

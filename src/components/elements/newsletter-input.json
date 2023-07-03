@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_elements_newsletter_inputs",
+  "info": {
+    "displayName": "Newsletter_input",
+    "icon": "envelop"
+  },
+  "options": {},
+  "attributes": {
+    "placeholder": {
+      "type": "email",
+      "required": true
+    }
+  }
+}

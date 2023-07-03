@@ -2,8 +2,32 @@
   "collectionName": "components_layout_headers",
   "info": {
     "displayName": "Header",
-    "icon": "layer"
+    "icon": "layer",
+    "description": ""
   },
   "options": {},
-  "attributes": {}
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Items": {
+      "displayName": "Items",
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.header-item",
+      "required": true,
+      "min": 1,
+      "max": 8
+    },
+    "cart_page": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    }
+  }
 }

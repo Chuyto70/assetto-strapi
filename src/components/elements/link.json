@@ -22,14 +22,14 @@
       "required": true
     },
     "icon": {
-      "type": "customField",
-      "customField": "plugin::react-icons.icon"
+      "type": "string"
     },
     "style": {
       "type": "enumeration",
       "enum": [
         "primary",
         "underline",
+        "icon",
         "button",
         "arrow",
         "none"

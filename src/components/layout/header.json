@@ -15,7 +15,12 @@
         "images"
       ]
     },
-    "Items": {
+    "logo_link": {
+      "type": "string",
+      "regex": "^(https?|mailto):\\/\\/[^\\s/$.?#].[^\\s]*$|^\\/?([^\\s/$.?#].[^\\s]*)?$",
+      "required": true
+    },
+    "items": {
       "displayName": "Items",
       "type": "component",
       "repeatable": true,

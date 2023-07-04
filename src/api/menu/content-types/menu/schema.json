@@ -16,7 +16,7 @@
     }
   },
   "attributes": {
-    "Header": {
+    "header": {
       "displayName": "Header",
       "type": "component",
       "repeatable": false,
@@ -28,7 +28,7 @@
       "component": "layout.header",
       "required": true
     },
-    "Footer": {
+    "footer": {
       "displayName": "Footer",
       "type": "component",
       "repeatable": false,

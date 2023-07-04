@@ -6,13 +6,13 @@
   },
   "options": {},
   "attributes": {
-    "Link": {
+    "link": {
       "type": "component",
       "repeatable": false,
       "component": "elements.link",
       "required": true
     },
-    "SubLinks": {
+    "sublinks": {
       "type": "component",
       "repeatable": true,
       "component": "elements.link",

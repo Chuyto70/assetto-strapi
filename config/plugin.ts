@@ -13,6 +13,5 @@ export default {
     },
     'encryptable-field': {
         enabled: true,
-    },
-    "react-icons": true,
+    }
 };

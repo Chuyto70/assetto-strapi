@@ -46,7 +46,7 @@
       "default": "right",
       "required": false
     },
-    "button_variants": {
+    "variant": {
       "type": "enumeration",
       "enum": [
         "primary",

@@ -26,6 +26,13 @@
       "repeatable": true,
       "component": "elements.link",
       "required": false
+    },
+    "logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

@@ -26,12 +26,6 @@
       "repeatable": true,
       "component": "elements.link",
       "required": false
-    },
-    "newsletter": {
-      "type": "component",
-      "repeatable": false,
-      "component": "elements.newsletter-input",
-      "required": false
     }
   }
 }

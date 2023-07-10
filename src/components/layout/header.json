@@ -28,11 +28,6 @@
       "required": true,
       "min": 1,
       "max": 8
-    },
-    "cart_page": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::page.page"
     }
   }
 }

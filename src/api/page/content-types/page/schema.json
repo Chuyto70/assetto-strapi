@@ -29,7 +29,7 @@
     },
     "title": {
       "type": "string",
-      "required": true,
+      "required": false,
       "unique": false,
       "pluginOptions": {
         "i18n": {

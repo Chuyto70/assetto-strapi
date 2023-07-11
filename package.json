@@ -10,6 +10,7 @@
     "lodash.set": "^4.3.2",
     "mime-types": "^2.1.35",
     "strapi-plugin-encryptable-field": "^1.1.3",
+    "strapi-plugin-multi-select": "^1.1.0",
     "stripe": "^12.11.0"
   },
   "name": "assetto-hosting-strapi",

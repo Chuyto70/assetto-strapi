@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_elements_text_shorts",
+  "info": {
+    "displayName": "Text_short",
+    "icon": "bold"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

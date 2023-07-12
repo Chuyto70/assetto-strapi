@@ -27,16 +27,6 @@
       },
       "private": true
     },
-    "title": {
-      "type": "string",
-      "required": false,
-      "unique": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "slug": {
       "pluginOptions": {
         "i18n": {
@@ -56,11 +46,7 @@
       },
       "type": "dynamiczone",
       "components": [
-        "sections.product-selected-list",
-        "sections.product-list",
-        "sections.cart",
-        "sections.checkout-tunnel",
-        "sections.checkout-complete"
+        "sections.single-product"
       ]
     },
     "metadata": {

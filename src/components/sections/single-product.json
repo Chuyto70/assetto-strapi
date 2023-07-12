@@ -1,14 +1,18 @@
 {
   "collectionName": "components_sections_single_products",
   "info": {
-    "displayName": "Single product"
+    "displayName": "Typed_title",
+    "icon": "bold",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "product": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::product.product"
+    "Titles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.text-short",
+      "min": 2,
+      "required": true
     }
   }
 }

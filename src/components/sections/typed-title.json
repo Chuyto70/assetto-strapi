@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "Titles": {
+    "titles": {
       "type": "component",
       "repeatable": true,
       "component": "elements.text-short",

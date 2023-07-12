@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_elements_mdx_blocks",
+  "info": {
+    "displayName": "Mdx_block",
+    "icon": "layer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

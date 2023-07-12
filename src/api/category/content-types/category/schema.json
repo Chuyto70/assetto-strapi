@@ -80,7 +80,7 @@
       },
       "type": "dynamiczone",
       "components": [
-        "sections.single-product"
+        
       ]
     },
     "metadata": {

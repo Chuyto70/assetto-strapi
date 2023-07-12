@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_sections_single_products",
+  "collectionName": "components_sections_typed_titles",
   "info": {
     "displayName": "Typed_title",
     "icon": "bold",
@@ -11,7 +11,7 @@
       "type": "component",
       "repeatable": true,
       "component": "elements.text-short",
-      "min": 2,
+      "min": 1,
       "required": true
     }
   }

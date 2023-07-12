@@ -46,7 +46,7 @@
       },
       "type": "dynamiczone",
       "components": [
-        "sections.single-product"
+        "sections.typed-title"
       ]
     },
     "metadata": {

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_carousels",
+  "info": {
+    "displayName": "Carousel",
+    "icon": "landscape"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "displayName": "Carousel_item",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.carousel-item",
+      "required": true,
+      "min": 1
+    }
+  }
+}

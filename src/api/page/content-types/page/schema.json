@@ -47,7 +47,8 @@
       "type": "dynamiczone",
       "components": [
         "sections.typed-title",
-        "sections.mdx-block"
+        "sections.mdx-block",
+        "sections.carousel"
       ]
     },
     "metadata": {

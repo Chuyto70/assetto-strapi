@@ -48,7 +48,8 @@
       "components": [
         "sections.typed-title",
         "sections.mdx-block",
-        "sections.carousel"
+        "sections.carousel",
+        "sections.services"
       ]
     },
     "metadata": {

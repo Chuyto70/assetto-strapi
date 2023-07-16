@@ -66,41 +66,6 @@
       "maxLength": 160,
       "required": true
     },
-    "price": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "decimal",
-      "required": true,
-      "min": 0.5
-    },
-    "sale_price": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "decimal",
-      "min": 0.5
-    },
-    "date_on_sale_from": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "datetime"
-    },
-    "date_on_sale_to": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "datetime"
-    },
     "medias": {
       "type": "media",
       "multiple": true,
@@ -114,27 +79,6 @@
           "localized": true
         }
       }
-    },
-    "colors": {
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "products.colors"
-    },
-    "sizes": {
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "component": "products.sizes",
-      "required": true
     },
     "categories": {
       "type": "relation",
@@ -152,6 +96,18 @@
       },
       "component": "seo.seo",
       "required": true
+    },
+    "prices": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "component": "products.price",
+      "required": true,
+      "min": 1
     }
   }
 }

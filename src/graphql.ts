@@ -1,6 +1,4 @@
-import { productSize } from "./api/product/graphql";
-
-const extensions = [productSize];
+const extensions = [];
 
 const graphql = (strapi) => {
     const extensionService = strapi.plugin('graphql').service('extension');

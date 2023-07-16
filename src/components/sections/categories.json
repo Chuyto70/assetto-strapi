@@ -2,14 +2,25 @@
   "collectionName": "components_sections_categories",
   "info": {
     "displayName": "Categories",
-    "icon": "car"
+    "icon": "car",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "games": {
+    "categories": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::category.category"
+    },
+    "cheapest_product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "short_description": {
+      "type": "boolean",
+      "default": true,
+      "required": true
     }
   }
 }

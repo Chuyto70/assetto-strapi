@@ -93,9 +93,7 @@
         }
       },
       "type": "dynamiczone",
-      "components": [
-        
-      ]
+      "components": []
     },
     "metadata": {
       "type": "component",

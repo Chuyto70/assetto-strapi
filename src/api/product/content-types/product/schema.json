@@ -136,10 +136,10 @@
       "component": "products.sizes",
       "required": true
     },
-    "games": {
+    "categories": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::game.game",
+      "target": "api::category.category",
       "inversedBy": "products"
     },
     "metadata": {

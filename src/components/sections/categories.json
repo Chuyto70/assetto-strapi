@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_sections_games",
+  "collectionName": "components_sections_categories",
   "info": {
-    "displayName": "Games",
+    "displayName": "Categories",
     "icon": "car"
   },
   "options": {},
@@ -9,7 +9,7 @@
     "games": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::game.game"
+      "target": "api::category.category"
     }
   }
 }

@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "games",
   "info": {
-    "singularName": "category",
-    "pluralName": "categories",
-    "displayName": "Category",
+    "singularName": "game",
+    "pluralName": "games",
+    "displayName": "Games",
     "description": ""
   },
   "options": {
@@ -65,6 +65,20 @@
       "type": "text",
       "maxLength": 160,
       "required": true
+    },
+    "image": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
     },
     "products": {
       "type": "relation",

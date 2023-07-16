@@ -51,7 +51,8 @@
         "sections.carousel",
         "sections.services",
         "sections.cta-numbers",
-        "sections.faq"
+        "sections.faq",
+        "sections.games"
       ]
     },
     "metadata": {

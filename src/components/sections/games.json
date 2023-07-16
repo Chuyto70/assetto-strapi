@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_games",
+  "info": {
+    "displayName": "Games",
+    "icon": "car"
+  },
+  "options": {},
+  "attributes": {
+    "games": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::game.game"
+    }
+  }
+}

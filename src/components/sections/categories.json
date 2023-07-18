@@ -12,15 +12,15 @@
       "relation": "oneToMany",
       "target": "api::category.category"
     },
-    "cheapest_product": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::product.product"
-    },
     "short_description": {
       "type": "boolean",
       "default": true,
       "required": true
+    },
+    "price_text": {
+      "type": "string",
+      "required": false,
+      "default": "from ${price}${currency_symbol} / month"
     }
   }
 }

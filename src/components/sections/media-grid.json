@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sections_media_grids",
+  "info": {
+    "displayName": "Media_grid",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "medias": {
+      "allowedTypes": [
+        "videos",
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

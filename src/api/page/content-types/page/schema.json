@@ -53,7 +53,8 @@
         "sections.cta-numbers",
         "sections.faq",
         "sections.categories",
-        "sections.game-request"
+        "sections.game-request",
+        "sections.media-grid"
       ]
     },
     "metadata": {

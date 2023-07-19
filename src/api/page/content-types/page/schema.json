@@ -52,7 +52,8 @@
         "sections.services",
         "sections.cta-numbers",
         "sections.faq",
-        "sections.categories"
+        "sections.categories",
+        "sections.game-request"
       ]
     },
     "metadata": {

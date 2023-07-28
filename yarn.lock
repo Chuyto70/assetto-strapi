@@ -3364,6 +3364,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sklinet/strapi-plugin-video-field@npm:^1.0.5":
+  version: 1.0.5
+  resolution: "@sklinet/strapi-plugin-video-field@npm:1.0.5"
+  peerDependencies:
+    "@strapi/strapi": ^4.0.0
+  checksum: 84c35693d41bc69f97b48b159a32c7501ffb3848d449e51bc472521abbbaee62caa623e85483098a02168cb1309968439a0cf2897bf8009371119f5ce4a1b75c
+  languageName: node
+  linkType: hard
+
 "@strapi/admin@npm:4.11.3":
   version: 4.11.3
   resolution: "@strapi/admin@npm:4.11.3"
@@ -5289,6 +5298,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "assetto-hosting-strapi@workspace:."
   dependencies:
+    "@sklinet/strapi-plugin-video-field": ^1.0.5
     "@strapi/plugin-color-picker": ^4.11.3
     "@strapi/plugin-graphql": 4.11.3
     "@strapi/plugin-i18n": 4.11.3

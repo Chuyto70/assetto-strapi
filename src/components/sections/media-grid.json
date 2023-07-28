@@ -2,18 +2,15 @@
   "collectionName": "components_sections_media_grids",
   "info": {
     "displayName": "Media_grid",
-    "icon": "grid"
+    "icon": "grid",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "medias": {
-      "allowedTypes": [
-        "videos",
-        "images"
-      ],
-      "type": "media",
-      "multiple": true,
-      "required": true
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::medias.media"
     }
   }
 }

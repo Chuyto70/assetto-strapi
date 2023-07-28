@@ -1,0 +1,5 @@
+/**
+ * medias service
+ */
+
+export default () => ({});

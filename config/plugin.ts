@@ -13,5 +13,8 @@ export default {
     },
     'encryptable-field': {
         enabled: true,
+    },
+    "video-field":{
+        enabled: true,
     }
 };

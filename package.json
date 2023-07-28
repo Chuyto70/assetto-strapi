@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@sklinet/strapi-plugin-video-field": "^1.0.5",
     "@strapi/plugin-color-picker": "^4.11.3",
     "@strapi/plugin-graphql": "4.11.3",
     "@strapi/plugin-i18n": "4.11.3",

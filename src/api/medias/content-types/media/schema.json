@@ -24,8 +24,7 @@
         "i18n": {
           "localized": true
         }
-      },
-      "private": true
+      }
     },
     "slug": {
       "pluginOptions": {
@@ -36,8 +35,7 @@
       "type": "string",
       "required": true,
       "unique": false,
-      "regex": "^[a-z0-9/]+(?:-[a-z0-9/]+)*$",
-      "default": "media/some-example-name"
+      "regex": "^[a-z0-9/]+(?:-[a-z0-9/]+)*$"
     },
     "media": {
       "type": "media",
@@ -74,6 +72,17 @@
       },
       "type": "customField",
       "customField": "plugin::video-field.video"
+    },
+    "metadata": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "seo.seo",
+      "required": true
     }
   }
 }

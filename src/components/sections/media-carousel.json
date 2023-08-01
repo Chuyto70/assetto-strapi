@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sections_media_carousels",
+  "info": {
+    "displayName": "Media_carousel",
+    "icon": "picture"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "medias": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::medias.media"
+    }
+  }
+}

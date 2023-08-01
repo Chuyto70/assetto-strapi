@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_sections_maps",
+  "info": {
+    "displayName": "Map",
+    "icon": "earth"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "float",
+      "required": true
+    },
+    "longitude": {
+      "type": "float",
+      "required": true
+    },
+    "zoom": {
+      "type": "integer",
+      "required": true,
+      "default": 9
+    },
+    "style": {
+      "type": "string",
+      "required": true,
+      "default": "mapbox://styles/mapbox/streets-v12"
+    },
+    "markers": {
+      "displayName": "Map_marker",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.map-marker",
+      "required": false
+    }
+  }
+}

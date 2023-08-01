@@ -61,6 +61,14 @@
       },
       "type": "string"
     },
+    "mapbox_public_key": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string"
+    },
     "currencies": {
       "pluginOptions": {
         "i18n": {

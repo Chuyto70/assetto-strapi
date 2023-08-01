@@ -21,7 +21,7 @@
       "required": true
     },
     "zoom": {
-      "type": "integer",
+      "type": "float",
       "required": true,
       "default": 9
     },

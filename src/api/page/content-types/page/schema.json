@@ -55,7 +55,8 @@
         "sections.categories",
         "sections.game-request",
         "sections.media-grid",
-        "sections.media-carousel"
+        "sections.media-carousel",
+        "sections.map"
       ]
     },
     "metadata": {

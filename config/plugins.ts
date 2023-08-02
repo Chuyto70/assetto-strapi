@@ -28,5 +28,5 @@ export default ({ env }) => ({
                 defaultReplyTo: env('SENDGRID_DEFAULT_REPLY'),
             },
         },
-    },
+    }
 });

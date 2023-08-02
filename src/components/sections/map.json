@@ -14,21 +14,23 @@
     },
     "latitude": {
       "type": "float",
-      "required": true
+      "required": true,
+      "default": 30
     },
     "longitude": {
       "type": "float",
-      "required": true
+      "required": true,
+      "default": 0
     },
     "zoom": {
       "type": "float",
       "required": true,
-      "default": 9
+      "default": 1
     },
     "style": {
       "type": "string",
       "required": true,
-      "default": "mapbox://styles/mapbox/streets-v12"
+      "default": "mapbox://styles/mapbox/dark-v10"
     },
     "markers": {
       "displayName": "Map_marker",

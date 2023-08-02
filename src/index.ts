@@ -9,6 +9,19 @@ export default {
    */
   register({ strapi }) {
     graphql(strapi);
+
+    // THIS IS A FIX FOR CONFIG/PLUGIN.TS NOT CHANGING MAIL PROVIDER
+    strapi.config.set('plugin.email', {
+      provider: 'sendgrid',
+      providerOptions: {
+        apiKey: process.env.SENDGRID_API_KEY,
+      },
+      settings: {
+        defaultFrom: process.env.SENDGRID_DEFAULT_FROM,
+        defaultReplyTo: process.env.SENDGRID_DEFAULT_REPLY,
+      }
+    });
+
   },
 
   /**

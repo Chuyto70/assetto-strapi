@@ -3262,6 +3262,35 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sendgrid/client@npm:^7.7.0":
+  version: 7.7.0
+  resolution: "@sendgrid/client@npm:7.7.0"
+  dependencies:
+    "@sendgrid/helpers": ^7.7.0
+    axios: ^0.26.0
+  checksum: 81299ff65b67de3df8c20f545aa7c3416519865079a2d21ce1ee80c76da568799679eb680fca51ef0df0ad34628e695e1991ea9cd8809baa9173ce5cda17fa50
+  languageName: node
+  linkType: hard
+
+"@sendgrid/helpers@npm:^7.7.0":
+  version: 7.7.0
+  resolution: "@sendgrid/helpers@npm:7.7.0"
+  dependencies:
+    deepmerge: ^4.2.2
+  checksum: 20387aae1bff06b9febc39f82cd184dd6e59d0e1ae2e74565d88802a6c6a5e4e571924335bfc8b1493f5f09e832f526f71d81e813295b2060379cb6e53786429
+  languageName: node
+  linkType: hard
+
+"@sendgrid/mail@npm:7.7.0":
+  version: 7.7.0
+  resolution: "@sendgrid/mail@npm:7.7.0"
+  dependencies:
+    "@sendgrid/client": ^7.7.0
+    "@sendgrid/helpers": ^7.7.0
+  checksum: 8bd446c367983e70b5d1f7a9a5796b2db3dd9304a3d6adf36fb3ee87ff0021e69223222e9ddfa62a40749ed9b136d0e6e4567e9dc4ad66b4ae38a404b07f24e1
+  languageName: node
+  linkType: hard
+
 "@sentry/core@npm:6.19.7":
   version: 6.19.7
   resolution: "@sentry/core@npm:6.19.7"
@@ -3868,6 +3897,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@strapi/provider-email-sendgrid@npm:^4.12.1":
+  version: 4.12.1
+  resolution: "@strapi/provider-email-sendgrid@npm:4.12.1"
+  dependencies:
+    "@sendgrid/mail": 7.7.0
+    "@strapi/utils": 4.12.1
+  checksum: 6c8a22a6a86d573dafcdaf50cea113070fb59838a5e44d149ddf5c301d4f9daef576b31c824959880928d3a1a33c3d8395f47451c2ee71992a37a4a8d28e466e
+  languageName: node
+  linkType: hard
+
 "@strapi/provider-email-sendmail@npm:4.11.3":
   version: 4.11.3
   resolution: "@strapi/provider-email-sendmail@npm:4.11.3"
@@ -4009,6 +4048,20 @@ __metadata:
     p-map: 4.0.0
     yup: 0.32.9
   checksum: 7ac66a4d0821e2968723c05bd2e4085ff10c2543911238ea205d68234fdf524100b3abf96d1ef5ded94ad73ba5e6a44143dacde6e624cce65a8e993f8440feb1
+  languageName: node
+  linkType: hard
+
+"@strapi/utils@npm:4.12.1":
+  version: 4.12.1
+  resolution: "@strapi/utils@npm:4.12.1"
+  dependencies:
+    "@sindresorhus/slugify": 1.1.0
+    date-fns: 2.30.0
+    http-errors: 1.8.1
+    lodash: 4.17.21
+    p-map: 4.0.0
+    yup: 0.32.9
+  checksum: b681e9fe0b43ee66ffd3ba75744943a1174f6d1d212e233aa9ffe9ff9333cc9cf0518eb4f5839ea7c03c7e20c5c3662b030e0bc40caeaced549776ac7a6a916d
   languageName: node
   linkType: hard
 
@@ -5303,6 +5356,7 @@ __metadata:
     "@strapi/plugin-graphql": 4.11.3
     "@strapi/plugin-i18n": 4.11.3
     "@strapi/plugin-users-permissions": 4.11.3
+    "@strapi/provider-email-sendgrid": ^4.12.1
     "@strapi/strapi": 4.11.3
     "@strapi/utils": ^4.11.3
     better-sqlite3: 8.4.0
@@ -5361,6 +5415,15 @@ __metadata:
     form-data: ^4.0.0
     proxy-from-env: ^1.1.0
   checksum: 7fb6a4313bae7f45e89d62c70a800913c303df653f19eafec88e56cea2e3821066b8409bc68be1930ecca80e861c52aa787659df0ffec6ad4d451c7816b9386b
+  languageName: node
+  linkType: hard
+
+"axios@npm:^0.26.0":
+  version: 0.26.1
+  resolution: "axios@npm:0.26.1"
+  dependencies:
+    follow-redirects: ^1.14.8
+  checksum: d9eb58ff4bc0b36a04783fc9ff760e9245c829a5a1052ee7ca6013410d427036b1d10d04e7380c02f3508c5eaf3485b1ae67bd2adbfec3683704745c8d7a6e1a
   languageName: node
   linkType: hard
 
@@ -7892,7 +7955,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.0.0, follow-redirects@npm:^1.15.0":
+"follow-redirects@npm:^1.0.0, follow-redirects@npm:^1.14.8, follow-redirects@npm:^1.15.0":
   version: 1.15.2
   resolution: "follow-redirects@npm:1.15.2"
   peerDependenciesMeta:

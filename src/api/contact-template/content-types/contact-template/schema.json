@@ -24,9 +24,9 @@
       },
       "type": "json",
       "default": {
-        "subject": "Welcome <%= user.firstname %>",
-        "text": "Welcome to mywebsite.fr! \n Your account is now linked with: <%= user.email %>.",
-        "html": "<h1>Welcome to mywebsite.fr!</h1><p>Your account is now linked with: <%= user.email %>.<p>"
+        "subject": "Thank you for contacting us, <%= data.name %>",
+        "text": "Hello <%= data.name %>,\n\nWe have received your message with the subject \"<%= data.subject %>\" and we will get back to you as soon as possible.\n\nHere is a copy of your message for your reference:\n\n<%= data.message %>\n\nThank you for choosing assettohosting.com !",
+        "html": "<h1>Hello <%= data.name %></h1>\n\n<p>We have received your message with the subject \"<%= data.subject %>\" and we will get back to you as soon as possible.</p>\n\n<p>Here is a copy of your message for your reference:</p>\n\n<blockquote><%= data.message %></blockquote>\n\n<p>Thank you for choosing assettohosting.com !</p>"
       }
     },
     "contact_email": {
@@ -37,9 +37,9 @@
       },
       "type": "json",
       "default": {
-        "subject": "Welcome <%= user.firstname %>",
-        "text": "Welcome to mywebsite.fr! \n Your account is now linked with: <%= user.email %>.",
-        "html": "<h1>Welcome to mywebsite.fr!</h1><p>Your account is now linked with: <%= user.email %>.<p>"
+        "subject": "You have a new message from <%= data.name %>",
+        "text": "Hello,\n\nYou have received a new message from <%= data.name %> with the email <%= data.email %> and the subject \"<%= data.subject %>\".\n\nHere is the content of the message:\n\n<%= data.message %>\n\nYou can reply to this message by sending an email to <%= data.email %>.\n\nHave a nice day!",
+        "html": "<h1>Hello</h1>\n\n<p>You have received a new message from <%= data.name %> with the email <%= data.email %> and the subject \"<%= data.subject %>\".</p>\n\n<p>Here is the content of the message:</p>\n\n<blockquote><%= data.message %></blockquote>\n\n<p>You can reply to this message by sending an email to <%= data.email %>.</p>\n\n<p>Have a nice day!</p>"
       }
     },
     "notification_email": {

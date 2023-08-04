@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_template",
+  "info": {
+    "singularName": "contact-template",
+    "pluralName": "contact-templates",
+    "displayName": "Contact template"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "confirmation_email": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "json",
+      "default": {
+        "subject": "Welcome <%= user.firstname %>",
+        "text": "Welcome to mywebsite.fr! \n Your account is now linked with: <%= user.email %>.",
+        "html": "<h1>Welcome to mywebsite.fr!</h1><p>Your account is now linked with: <%= user.email %>.<p>"
+      }
+    },
+    "contact_email": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "json",
+      "default": {
+        "subject": "Welcome <%= user.firstname %>",
+        "text": "Welcome to mywebsite.fr! \n Your account is now linked with: <%= user.email %>.",
+        "html": "<h1>Welcome to mywebsite.fr!</h1><p>Your account is now linked with: <%= user.email %>.<p>"
+      }
+    }
+  }
+}

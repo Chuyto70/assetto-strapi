@@ -4,7 +4,8 @@
   "info": {
     "singularName": "contact-template",
     "pluralName": "contact-templates",
-    "displayName": "Contact template"
+    "displayName": "Contact template",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -40,6 +41,15 @@
         "text": "Welcome to mywebsite.fr! \n Your account is now linked with: <%= user.email %>.",
         "html": "<h1>Welcome to mywebsite.fr!</h1><p>Your account is now linked with: <%= user.email %>.<p>"
       }
+    },
+    "notification_email": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "email",
+      "required": true
     }
   }
 }

@@ -1,4 +1,4 @@
-export const upsertGameRequest = (strapi) => ({ nexus }) => {
+export const GameRequest = (strapi) => ({ nexus }) => {
     const upsert = nexus.extendType({
         type: 'Mutation',
         definition(t) {

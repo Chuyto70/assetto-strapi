@@ -1,6 +1,7 @@
-import { upsertGameRequest } from "./api/game-request/graphql";
+import { ContactMail } from "./api/contact-template/graphql";
+import { GameRequest } from "./api/game-request/graphql";
 
-const extensions = [upsertGameRequest];
+const extensions = [GameRequest, ContactMail];
 
 const graphql = (strapi) => {
     const extensionService = strapi.plugin('graphql').service('extension');

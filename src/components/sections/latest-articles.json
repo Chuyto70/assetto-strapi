@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_sections_latest_articles",
+  "info": {
+    "displayName": "Latest Articles",
+    "icon": "feather"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "status_icon": {
+      "type": "string"
+    },
+    "status_text": {
+      "type": "string",
+      "default": "All systems operational"
+    },
+    "base_number": {
+      "type": "integer",
+      "required": true,
+      "default": 3
+    },
+    "btn_text": {
+      "type": "string",
+      "required": true,
+      "default": "load more"
+    }
+  }
+}

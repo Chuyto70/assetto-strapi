@@ -2,7 +2,8 @@
   "collectionName": "components_sections_latest_articles",
   "info": {
     "displayName": "Latest Articles",
-    "icon": "feather"
+    "icon": "feather",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -16,7 +17,7 @@
       "type": "string",
       "default": "All systems operational"
     },
-    "base_number": {
+    "page_size": {
       "type": "integer",
       "required": true,
       "default": 3
@@ -25,6 +26,22 @@
       "type": "string",
       "required": true,
       "default": "load more"
+    },
+    "link_text": {
+      "type": "string",
+      "required": true,
+      "default": "read the info"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "operational",
+        "maintenance",
+        "degraded",
+        "down",
+        "unknown"
+      ],
+      "default": "Operational"
     }
   }
 }

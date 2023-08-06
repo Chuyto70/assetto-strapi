@@ -90,6 +90,15 @@
       "type": "richtext",
       "required": true
     },
+    "author": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "required": true
+    },
     "metadata": {
       "type": "component",
       "repeatable": false,

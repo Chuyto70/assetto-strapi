@@ -58,7 +58,8 @@
         "sections.media-carousel",
         "sections.map",
         "sections.contact",
-        "sections.latest-articles"
+        "sections.latest-articles",
+        "sections.preview"
       ]
     },
     "metadata": {

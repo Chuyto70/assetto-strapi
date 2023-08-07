@@ -124,7 +124,8 @@
         "sections.media-carousel",
         "sections.media-grid",
         "sections.services",
-        "sections.typed-title"
+        "sections.typed-title",
+        "sections.preview"
       ]
     },
     "metadata": {

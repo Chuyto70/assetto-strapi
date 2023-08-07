@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sections_benefits",
+  "info": {
+    "displayName": "Benefits",
+    "icon": "magic"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "benefits": {
+      "displayName": "Benefits_item",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.benefits-item",
+      "max": 6,
+      "min": 2,
+      "required": true
+    }
+  }
+}

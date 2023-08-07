@@ -59,7 +59,9 @@
         "sections.map",
         "sections.contact",
         "sections.latest-articles",
-        "sections.preview"
+        "sections.preview",
+        "sections.benefits",
+        "sections.display"
       ]
     },
     "metadata": {

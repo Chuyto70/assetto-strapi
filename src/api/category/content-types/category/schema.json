@@ -95,7 +95,7 @@
           "localized": true
         }
       },
-      "type": "text",
+      "type": "string",
       "default": "choose",
       "required": true
     },
@@ -125,7 +125,9 @@
         "sections.media-grid",
         "sections.services",
         "sections.typed-title",
-        "sections.preview"
+        "sections.preview",
+        "sections.benefits",
+        "sections.display"
       ]
     },
     "metadata": {

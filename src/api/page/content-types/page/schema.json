@@ -61,7 +61,8 @@
         "sections.latest-articles",
         "sections.preview",
         "sections.benefits",
-        "sections.display"
+        "sections.display",
+        "sections.testimonials"
       ]
     },
     "metadata": {

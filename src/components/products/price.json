@@ -194,6 +194,10 @@
       "default": "€",
       "required": true,
       "maxLength": 5
+    },
+    "paypal_plan_id": {
+      "type": "string",
+      "required": false
     }
   }
 }

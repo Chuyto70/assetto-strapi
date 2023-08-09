@@ -127,7 +127,8 @@
         "sections.typed-title",
         "sections.preview",
         "sections.benefits",
-        "sections.display"
+        "sections.display",
+        "sections.testimonials"
       ]
     },
     "metadata": {

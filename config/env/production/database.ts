@@ -1,14 +1,6 @@
 import path from 'path';
 
 export default ({ env }) => {
-  console.log(path.join(
-    __dirname,
-    '..',
-    '..',
-    '..',
-    '..',
-    env('DATABASE_FILENAME', 'data.db')
-  ));
   const client = env('DATABASE_CLIENT', 'sqlite');
 
   const connections = {

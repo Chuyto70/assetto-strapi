@@ -22,7 +22,28 @@
         }
       },
       "type": "json",
-      "required": true
+      "required": true,
+      "default": {
+        "settings": {
+          "choose_your_language": "Choose your language :",
+          "choose_your_currency": "Choose your currency :",
+          "change_currency_success": "Your currency has been changed"
+        },
+        "errors": {
+          "page_not_found": "Looks like you’re lost",
+          "internal_server_error": "Looks like something went wrong, please try again later"
+        },
+        "btn": {
+          "back_to_home": "back to home"
+        },
+        "checkout": {
+          "subscribe_to": "Subscribe to",
+          "plan_price": "Plan price",
+          "format_price": "${price}${currency_symbol}",
+          "total_amount": "Total Amount",
+          "reccuring_price": "Recurring price"
+        }
+      }
     }
   }
 }

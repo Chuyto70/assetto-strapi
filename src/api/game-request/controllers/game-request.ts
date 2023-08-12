@@ -3,9 +3,17 @@
  */
 
 import { factories } from '@strapi/strapi';
-import utils from '@strapi/utils';
+import { sanitize } from '@strapi/utils';
 
-const { contentAPI } = utils.sanitize;
+const { contentAPI } = sanitize;
+
+type GameRequestAttributes = {
+    id: number;
+    email: string;
+    game: string;
+    createdAt: Date;
+    updatedAt: Date;
+};
 
 export default factories.createCoreController('api::game-request.game-request', ({ strapi }) => ({
     async upsert(ctx) {
@@ -14,7 +22,7 @@ export default factories.createCoreController('api::game-request.game-request', 
         const contentType = strapi.contentType('api::game-request.game-request');
         const sanitizedInput = await contentAPI.input(data, contentType, ctx.state.auth);
         const response = await strapi.service('api::game-request.game-request').upsert(sanitizedInput);
-        const sanitizedResults = await contentAPI.output(response, contentType, ctx.state.auth);
+        const sanitizedResults = await contentAPI.output(response, contentType, ctx.state.auth) as GameRequestAttributes;
         return {
             data: {
                 id: sanitizedResults.id,

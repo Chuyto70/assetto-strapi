@@ -3,9 +3,9 @@
  */
 
 import { factories } from '@strapi/strapi';
-import utils from '@strapi/utils';
+import { errors } from '@strapi/utils';
 
-const { ApplicationError } = utils.errors;
+const { ApplicationError } = errors;
 
 export default factories.createCoreService('api::game-request.game-request', ({ strapi }) => ({
     async upsert(data) {

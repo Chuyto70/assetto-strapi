@@ -128,7 +128,8 @@
         "sections.preview",
         "sections.benefits",
         "sections.display",
-        "sections.testimonials"
+        "sections.testimonials",
+        "elements.link"
       ]
     },
     "metadata": {

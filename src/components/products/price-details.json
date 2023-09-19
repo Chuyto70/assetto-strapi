@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_products_price_details",
+  "info": {
+    "displayName": "Price_details",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "line_name": {
+      "type": "string",
+      "required": true
+    },
+    "amount": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}

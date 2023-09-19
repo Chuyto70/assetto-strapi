@@ -198,6 +198,12 @@
     "paypal_plan_id": {
       "type": "string",
       "required": false
+    },
+    "details": {
+      "displayName": "Price_details",
+      "type": "component",
+      "repeatable": true,
+      "component": "products.price-details"
     }
   }
 }

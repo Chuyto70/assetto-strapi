@@ -1,12 +1,13 @@
 
-import Logo from './extensions/admin-logo.png';
+import AuthLogo from './extensions/auth-logo.png';
+import MenuLogo from './extensions/menu-logo.png';
 import favicon from './extensions/favicon.ico';
 
 export default {
   config: {
     // Replace the Strapi logo in auth (login) views
     auth: {
-      logo: Logo,
+      logo: AuthLogo,
     },
    // Replace the favicon
     head: {
@@ -16,40 +17,70 @@ export default {
     locales: ['fr', 'es'],
     // Replace the Strapi logo in the main navigation
     menu: {
-      logo: Logo,
+      logo: MenuLogo,
     },
     // Override or extend the theme
     theme: {
       light: {
         colors: {
-          primary100: '#e6c2bf',
-          primary200: '#c8897b',
-          primary500: '#aa3000',
-          buttonPrimary500: '#aa3000',
-          primary600: '#9f2700',
-          buttonPrimary600: '#9f2700',
-          primary700: '#901e00',
-          secondary100: '#bfe3e6',
-          secondary200: '#93d2d7',
-          secondary500: '#2fa6a8',
-          secondary600: '#2b989a',
-          secondary700: '#278788',
+          neutral0: '#F9F9F9',
+          neutral100: '#F4F4F4',
+          neutral150: '#ECECEC',
+          neutral200: '#DDDDDD',
+          neutral300: '#B9B9B9',
+          neutral400: '#9A9A9A',
+          neutral500: '#717171',
+          neutral600: '#5D5D5D',
+          neutral700: '#3F3F3F',
+          neutral800: '#1E1E1E',
+          neutral900: '#101010',
+          neutral1000: '#101010',
+          buttonNeutral0: "#F9F9F9",
+
+          primary100: '#FFC9B7',
+          primary200: '#FFA689',
+          primary500: '#FF4205',
+          buttonPrimary500: '#FF4205',
+          primary600: '#FF3D00',
+          buttonPrimary600: '#FF3D00',
+          primary700: '#F13400',
+
+          secondary100: '#E0BBE0',
+          secondary200: '#CC8ECC',
+          secondary500: '#981B9B',
+          secondary600: '#8B1895',
+          secondary700: '#79138D',
         }
       },
       dark: {
         colors: {
-          primary100: '#e6c2bf',
-          primary200: '#c8897b',
-          primary500: '#aa3000',
-          buttonPrimary500: '#aa3000',
-          primary600: '#9f2700',
-          buttonPrimary600: '#9f2700',
-          primary700: '#901e00',
-          secondary100: '#bfe3e6',
-          secondary200: '#93d2d7',
-          secondary500: '#2fa6a8',
-          secondary600: '#2b989a',
-          secondary700: '#278788',
+          neutral0: '#101010',
+          neutral100: '#1E1E1E',
+          neutral150: '#3F3F3F',
+          neutral200: '#5D5D5D',
+          neutral300: '#717171',
+          neutral400: '#9A9A9A',
+          neutral500: '#B9B9B9',
+          neutral600: '#DDDDDD',
+          neutral700: '#ECECEC',
+          neutral800: '#F4F4F4',
+          neutral900: '#F9F9F9',
+          neutral1000: '#F9F9F9',
+          buttonNeutral0: "#F9F9F9",
+
+          primary100: '#FFC9B7',
+          primary200: '#FFA689',
+          primary500: '#FF4205',
+          buttonPrimary500: '#FF4205',
+          primary600: '#FF3D00',
+          buttonPrimary600: '#FF3D00',
+          primary700: '#F13400',
+
+          secondary100: '#E0BBE0',
+          secondary200: '#CC8ECC',
+          secondary500: '#981B9B',
+          secondary600: '#8B1895',
+          secondary700: '#79138D',
         }
       }
     },

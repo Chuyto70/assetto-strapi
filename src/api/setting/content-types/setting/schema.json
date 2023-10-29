@@ -425,6 +425,14 @@
         }
       },
       "type": "string"
+    },
+    "provide_support_script": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "text"
     }
   }
 }

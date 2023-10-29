@@ -112,7 +112,8 @@
     "success_page": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::page.page"
+      "target": "api::page.page",
+      "required": true
     }
   }
 }

@@ -129,12 +129,8 @@
         "sections.benefits",
         "sections.display",
         "sections.testimonials",
-<<<<<<< HEAD
-        "elements.link"
-=======
         "elements.link",
         "sections.media-grid-alt"
->>>>>>> 1f8f0370b1035e162aa2f2763839187d10eb95b6
       ]
     },
     "metadata": {

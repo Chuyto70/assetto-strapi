@@ -425,8 +425,6 @@
         }
       },
       "type": "string"
-<<<<<<< HEAD
-=======
     },
     "provide_support_script": {
       "pluginOptions": {
@@ -435,7 +433,6 @@
         }
       },
       "type": "text"
->>>>>>> 1f8f0370b1035e162aa2f2763839187d10eb95b6
     }
   }
 }

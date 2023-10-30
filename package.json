@@ -9,10 +9,6 @@
     "@strapi/strapi": "4.12.4",
     "@strapi/utils": "^4.12.4",
     "better-sqlite3": "8.5.0",
-<<<<<<< HEAD
-    "cross-env": "^7.0.3",
-=======
->>>>>>> 1f8f0370b1035e162aa2f2763839187d10eb95b6
     "lodash.set": "^4.3.2",
     "mime-types": "^2.1.35",
     "pg": "^8.11.2",
@@ -28,13 +24,7 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-<<<<<<< HEAD
-    "strapi": "strapi",
-	"build:win": "cross-env NODE_ENV=production yarn build",
-	"start:win": "cross-env NODE_ENV=production yarn start"
-=======
     "strapi": "strapi"
->>>>>>> 1f8f0370b1035e162aa2f2763839187d10eb95b6
   },
   "author": {
     "name": "Sygix"
@@ -48,10 +38,5 @@
     "node": ">=14.19.1 <=18.x.x",
     "npm": ">=6.0.0"
   },
-<<<<<<< HEAD
-  "license": "MIT",
-  "packageManager": "yarn@3.6.3"
-=======
   "license": "MIT"
->>>>>>> 1f8f0370b1035e162aa2f2763839187d10eb95b6
 }

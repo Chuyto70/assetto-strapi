@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_typed_titles",
+  "info": {
+    "displayName": "Typed_title",
+    "icon": "bold",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "titles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.text-short",
+      "min": 1,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_sections_displays",
+  "info": {
+    "displayName": "Display",
+    "icon": "layer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "description": {
+      "type": "text"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.link",
+      "required": false
+    },
+    "medias": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::medias.media"
+    },
+    "scrolling_speed": {
+      "type": "decimal",
+      "required": true,
+      "default": 1
+    }
+  }
+}

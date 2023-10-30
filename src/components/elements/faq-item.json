@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_elements_faq_items",
+  "info": {
+    "displayName": "Faq_item",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "response": {
+      "type": "richtext",
+      "required": true
+    },
+    "initial_open": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

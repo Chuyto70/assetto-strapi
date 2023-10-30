@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_sections_maps",
+  "info": {
+    "displayName": "Map",
+    "icon": "earth"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "float",
+      "required": true,
+      "default": 30
+    },
+    "longitude": {
+      "type": "float",
+      "required": true,
+      "default": 0
+    },
+    "zoom": {
+      "type": "float",
+      "required": true,
+      "default": 1
+    },
+    "style": {
+      "type": "string",
+      "required": true,
+      "default": "mapbox://styles/mapbox/dark-v10"
+    },
+    "markers": {
+      "displayName": "Map_marker",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.map-marker",
+      "required": false
+    }
+  }
+}

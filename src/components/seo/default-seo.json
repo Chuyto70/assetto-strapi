@@ -9,12 +9,12 @@
   "attributes": {
     "title": {
       "type": "string",
-      "default": "Alhéna title",
+      "default": "AssettoHosting title",
       "required": true
     },
     "siteName": {
       "type": "string",
-      "default": "Alhéna sitename",
+      "default": "AssettoHosting sitename",
       "required": true
     },
     "description": {

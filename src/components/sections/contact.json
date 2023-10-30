@@ -1,0 +1,59 @@
+{
+  "collectionName": "components_sections_contacts",
+  "info": {
+    "displayName": "Contact",
+    "icon": "envelop"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "description": {
+      "type": "string"
+    },
+    "field_name": {
+      "type": "string",
+      "required": true,
+      "default": "name"
+    },
+    "field_name_placeholder": {
+      "type": "string",
+      "default": "some name",
+      "required": false
+    },
+    "field_email": {
+      "type": "string",
+      "default": "your email",
+      "required": true
+    },
+    "field_email_placeholder": {
+      "type": "string",
+      "default": "demo@example.com"
+    },
+    "field_subject": {
+      "type": "string",
+      "required": true,
+      "default": "subject"
+    },
+    "field_subject_placeholder": {
+      "type": "string",
+      "default": "contact subject"
+    },
+    "field_message": {
+      "type": "string",
+      "required": true,
+      "default": "message"
+    },
+    "field_message_placeholder": {
+      "type": "string",
+      "default": "lorem ipsum dolor sit amet"
+    },
+    "field_submit": {
+      "type": "string",
+      "default": "send my message",
+      "required": true
+    }
+  }
+}

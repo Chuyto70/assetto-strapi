@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_elements_service_blocks",
+  "info": {
+    "displayName": "Service_block",
+    "icon": "cube"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

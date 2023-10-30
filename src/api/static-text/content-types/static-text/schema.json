@@ -22,7 +22,57 @@
         }
       },
       "type": "json",
-      "required": true
+      "required": true,
+      "default": {
+        "settings": {
+          "choose_your_language": "Choose your language :",
+          "choose_your_currency": "Choose your currency :",
+          "change_currency_success": "Your currency has been changed"
+        },
+        "errors": {
+          "page_not_found": "Looks like you’re lost",
+          "internal_server_error": "Looks like something went wrong, please try again later",
+          "price_no_details": "No details provided"
+        },
+        "btn": {
+          "back_to_home": "back to home",
+          "previous": "Previous",
+          "submit": "Submit"
+        },
+        "checkout": {
+          "subscribe_to": "Subscribe to",
+          "subscribed": "You are now subscribed",
+          "format_price": "${price}${currency_symbol}",
+          "total_amount": "Total Amount"
+        },
+        "forms": {
+          "invalid_email": "Your email is not valid",
+          "required_email": "An email address is required",
+          "required_game": "A game is required",
+          "required_name": "A name is required",
+          "min_name": "Your name must have more than 2 letters",
+          "max_name": "Your name is too long",
+          "regex_name": "Your name must consist of letters and a possible space",
+          "required_city": "A city is required",
+          "max_city": "Your city is too long",
+          "regex_city": "Your city must consist of letters, spaces, hyphens or apostrophes",
+          "required_country": "A country is required",
+          "required_address": "An address is required",
+          "regex_address": "Your address must consist of numbers, letters, spaces, hyphens, apostrophes or periods",
+          "required_postalcode": "A postal code is required",
+          "max_postalcode": "Your postal code is too long",
+          "regex_postalcode": "Your postal code must consist of numbers, letters, spaces, hyphens, apostrophes or parentheses",
+          "required_subject": "A subject is required",
+          "required_message": "A message is required",
+          "min": "This line should be longer",
+          "max": "This line should be shorter",
+          "request_sent": "Your request has been taken into account, thank you",
+          "request_error": "Oops, there was a problem with your request, please try again later"
+        },
+        "toaster": {
+          "copied_to_clipboard": "Copied to your clipboard !"
+        }
+      }
     }
   }
 }

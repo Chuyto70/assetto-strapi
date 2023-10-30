@@ -1,6 +1,7 @@
-import { productSize } from "./api/product/graphql";
+import { ContactMail } from "./api/contact-template/graphql";
+import { GameRequest } from "./api/game-request/graphql";
 
-const extensions = [productSize];
+const extensions = [GameRequest, ContactMail];
 
 const graphql = (strapi) => {
     const extensionService = strapi.plugin('graphql').service('extension');

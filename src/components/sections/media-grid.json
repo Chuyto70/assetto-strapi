@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sections_media_grids",
+  "info": {
+    "displayName": "Media_grid",
+    "icon": "grid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "medias": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::medias.media"
+    }
+  }
+}

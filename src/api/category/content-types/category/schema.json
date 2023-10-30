@@ -33,8 +33,7 @@
         }
       },
       "type": "string",
-      "required": true,
-      "private": false
+      "required": true
     },
     "slug": {
       "pluginOptions": {
@@ -66,6 +65,40 @@
       "maxLength": 160,
       "required": true
     },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "price_text": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text",
+      "maxLength": 160,
+      "required": true
+    },
+    "btn_text": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "choose",
+      "required": true
+    },
     "products": {
       "type": "relation",
       "relation": "manyToMany",
@@ -80,7 +113,24 @@
       },
       "type": "dynamiczone",
       "components": [
-        "sections.single-product"
+        "sections.carousel",
+        "sections.contact",
+        "sections.cta-numbers",
+        "sections.faq",
+        "sections.game-request",
+        "sections.latest-articles",
+        "sections.map",
+        "sections.mdx-block",
+        "sections.media-carousel",
+        "sections.media-grid",
+        "sections.services",
+        "sections.typed-title",
+        "sections.preview",
+        "sections.benefits",
+        "sections.display",
+        "sections.testimonials",
+        "elements.link",
+        "sections.media-grid-alt"
       ]
     },
     "metadata": {

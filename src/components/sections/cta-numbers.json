@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_sections_cta_numbers",
+  "info": {
+    "displayName": "CTA_numbers",
+    "icon": "chartCircle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text_1": {
+      "type": "string",
+      "required": true,
+      "default": "Already ${firstNumber}+ active assetto corsa servers"
+    },
+    "text_2": {
+      "type": "string"
+    },
+    "cta_btn": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.link",
+      "required": false
+    }
+  }
+}

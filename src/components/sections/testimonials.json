@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_sections_testimonials",
+  "info": {
+    "displayName": "Testimonials",
+    "icon": "user",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "elfsight_id": {
+      "type": "string",
+      "required": true,
+      "default": "8be099a7-83d0-4131-a70f-12654aa6d510"
+    },
+    "modern": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

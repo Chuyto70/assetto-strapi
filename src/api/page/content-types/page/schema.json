@@ -63,7 +63,8 @@
         "sections.benefits",
         "sections.display",
         "sections.testimonials",
-        "elements.link"
+        "elements.link",
+        "sections.media-grid-alt"
       ]
     },
     "metadata": {

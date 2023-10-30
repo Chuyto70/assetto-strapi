@@ -1,0 +1,172 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "payment_intent_id": {
+      "type": "string",
+      "required": false,
+      "unique": true
+    },
+    "email": {
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
+      "required": false,
+      "regex": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+    },
+    "billing_name": {
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
+      "regex": "^[A-Za-zÀ-ÿ-]{2,}(?:\\s[A-Za-zÀ-ÿ-]{2,})?$",
+      "required": false
+    },
+    "billing_city": {
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
+      "regex": "^[a-zA-ZÀ-ÿ\\s\\-']+$",
+      "required": false
+    },
+    "billing_country": {
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
+      "regex": "^[a-zA-ZÀ-ÿ\\s\\-'()]+$",
+      "required": false
+    },
+    "billing_line1": {
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
+      "regex": "^[0-9A-Za-zÀ-ÿ\\s\\-\\',\\.]+$",
+      "required": false
+    },
+    "billing_line2": {
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
+      "regex": "^[0-9A-Za-zÀ-ÿ\\s\\-\\',\\.]+$"
+    },
+    "billing_postal_code": {
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
+      "regex": "^.+$",
+      "required": false
+    },
+    "billing_state": {
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field"
+    },
+    "shipping_name": {
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
+      "regex": "^[A-Za-zÀ-ÿ-]{2,}(?:\\s[A-Za-zÀ-ÿ-]{2,})?$",
+      "required": false
+    },
+    "shipping_city": {
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
+      "regex": "^[a-zA-ZÀ-ÿ\\s\\-']+$",
+      "required": false
+    },
+    "shipping_country": {
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
+      "regex": "^[a-zA-ZÀ-ÿ\\s\\-'()]+$",
+      "required": false
+    },
+    "shipping_line1": {
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
+      "regex": "^[0-9A-Za-zÀ-ÿ\\s\\-\\',\\.]+$",
+      "required": false
+    },
+    "shipping_line2": {
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
+      "regex": "^[0-9A-Za-zÀ-ÿ\\s\\-\\',\\.]+$"
+    },
+    "shipping_postal_code": {
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field",
+      "regex": "^.+$",
+      "required": false
+    },
+    "shipping_state": {
+      "type": "customField",
+      "options": {
+        "hint": null
+      },
+      "customField": "plugin::encryptable-field.encryptable-field"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "succeeded",
+        "processing",
+        "pending",
+        "checkout",
+        "failed",
+        "canceled"
+      ],
+      "required": true,
+      "default": "checkout"
+    },
+    "amount": {
+      "type": "decimal",
+      "min": 0,
+      "required": true
+    },
+    "products": {
+      "type": "json",
+      "required": true
+    }
+  }
+}

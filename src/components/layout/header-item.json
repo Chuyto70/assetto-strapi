@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_layout_header_items",
+  "info": {
+    "displayName": "Header_item",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.link",
+      "required": true
+    },
+    "sublinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.link",
+      "required": false
+    }
+  }
+}

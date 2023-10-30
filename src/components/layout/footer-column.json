@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_layout_footer_columns",
+  "info": {
+    "displayName": "Footer Column",
+    "icon": "columns",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": false
+    },
+    "socials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.link",
+      "required": false
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.link",
+      "required": false
+    },
+    "logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

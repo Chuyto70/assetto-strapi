@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_layout_headers",
+  "info": {
+    "displayName": "Header",
+    "icon": "layer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "logo_link": {
+      "type": "string",
+      "regex": "^(https?|mailto):\\/\\/[^\\s/$.?#].[^\\s]*$|^\\/?([^\\s/$.?#].[^\\s]*)?$",
+      "required": true
+    },
+    "items": {
+      "displayName": "Items",
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.header-item",
+      "required": true,
+      "min": 1,
+      "max": 8
+    }
+  }
+}

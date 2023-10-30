@@ -1,0 +1,86 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "private": true
+    },
+    "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true,
+      "unique": false,
+      "regex": "^[a-z0-9/]+(?:-[a-z0-9/]+)*$"
+    },
+    "content": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "sections.typed-title",
+        "sections.mdx-block",
+        "sections.carousel",
+        "sections.services",
+        "sections.cta-numbers",
+        "sections.faq",
+        "sections.categories",
+        "sections.game-request",
+        "sections.media-grid",
+        "sections.media-carousel",
+        "sections.map",
+        "sections.contact",
+        "sections.latest-articles",
+        "sections.preview",
+        "sections.benefits",
+        "sections.display",
+        "sections.testimonials",
+<<<<<<< HEAD
+        "elements.link"
+=======
+        "elements.link",
+        "sections.media-grid-alt"
+>>>>>>> 1f8f0370b1035e162aa2f2763839187d10eb95b6
+      ]
+    },
+    "metadata": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "seo.seo",
+      "required": true
+    }
+  }
+}

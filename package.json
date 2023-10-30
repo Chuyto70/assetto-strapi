@@ -1,0 +1,57 @@
+{
+  "dependencies": {
+    "@sklinet/strapi-plugin-video-field": "^1.0.5",
+    "@strapi/plugin-color-picker": "^4.12.4",
+    "@strapi/plugin-graphql": "4.12.4",
+    "@strapi/plugin-i18n": "4.12.4",
+    "@strapi/plugin-users-permissions": "4.12.4",
+    "@strapi/provider-email-sendgrid": "^4.12.4",
+    "@strapi/strapi": "4.12.4",
+    "@strapi/utils": "^4.12.4",
+    "better-sqlite3": "8.5.0",
+<<<<<<< HEAD
+    "cross-env": "^7.0.3",
+=======
+>>>>>>> 1f8f0370b1035e162aa2f2763839187d10eb95b6
+    "lodash.set": "^4.3.2",
+    "mime-types": "^2.1.35",
+    "pg": "^8.11.2",
+    "strapi-plugin-encryptable-field": "^1.1.4",
+    "strapi-plugin-multi-select": "^1.2.2",
+    "stripe": "^12.18.0"
+  },
+  "name": "assetto-hosting-strapi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+<<<<<<< HEAD
+    "strapi": "strapi",
+	"build:win": "cross-env NODE_ENV=production yarn build",
+	"start:win": "cross-env NODE_ENV=production yarn start"
+=======
+    "strapi": "strapi"
+>>>>>>> 1f8f0370b1035e162aa2f2763839187d10eb95b6
+  },
+  "author": {
+    "name": "Sygix"
+  },
+  "strapi": {
+    "template": "ecommerce",
+    "uuid": "7ef11c29-5051-4ba1-8a7e-80ed32ff940f",
+    "telemetryDisabled": false
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+<<<<<<< HEAD
+  "license": "MIT",
+  "packageManager": "yarn@3.6.3"
+=======
+  "license": "MIT"
+>>>>>>> 1f8f0370b1035e162aa2f2763839187d10eb95b6
+}

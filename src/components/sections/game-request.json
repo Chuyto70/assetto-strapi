@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sections_game_requests",
+  "info": {
+    "displayName": "Game_request",
+    "icon": "car",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "btn_text": {
+      "type": "string",
+      "required": true
+    },
+    "email_placeholder": {
+      "type": "string",
+      "required": false
+    },
+    "game_placeholder": {
+      "type": "string"
+    }
+  }
+}

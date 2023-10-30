@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_seo_default_seos",
+  "info": {
+    "displayName": "default seo",
+    "icon": "info",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "AssettoHosting title",
+      "required": true
+    },
+    "siteName": {
+      "type": "string",
+      "default": "AssettoHosting sitename",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

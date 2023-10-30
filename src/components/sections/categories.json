@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sections_categories",
+  "info": {
+    "displayName": "Categories",
+    "icon": "car",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    },
+    "short_description": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "price_text": {
+      "type": "string",
+      "required": false,
+      "default": "from ${price}${currency_symbol} / month"
+    }
+  }
+}

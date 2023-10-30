@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_elements_mdx_blocks",
+  "info": {
+    "displayName": "Mdx_block",
+    "icon": "layer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext",
+      "required": true
+    },
+    "max_width": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "none",
+        "max_w_screen_sm",
+        "max_w_screen_md",
+        "max_w_screen_lg",
+        "max_w_screen_xl",
+        "max_w_screen_2xl"
+      ],
+      "default": "default",
+      "required": true
+    }
+  }
+}

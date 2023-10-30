@@ -1,0 +1,62 @@
+{
+  "collectionName": "components_elements_links",
+  "info": {
+    "displayName": "Link",
+    "icon": "chartBubble",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "regex": "^(https?|mailto):\\/\\/[^\\s/$.?#].[^\\s]*$|^\\/?([^\\s/$.?#].[^\\s]*)?$",
+      "required": true
+    },
+    "open_new_tab": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "icon": {
+      "type": "string"
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "underline",
+        "icon",
+        "button",
+        "arrow",
+        "none"
+      ],
+      "default": "none",
+      "required": false
+    },
+    "direction": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right"
+      ],
+      "default": "right",
+      "required": false
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "outline",
+        "ghost",
+        "light",
+        "dark"
+      ],
+      "default": "primary",
+      "required": false
+    }
+  }
+}

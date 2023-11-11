@@ -16,7 +16,7 @@
       "type": "string",
       "required": true,
       "unique": true,
-      "regex": "^\\/[a-zA-Z0-9/-]+(?:\\.[a-zA-Z]+)?$"
+      "regex": "^\\/(?:[a-zA-Z0-9/-]+(?:\\.[a-zA-Z]+)?|)$"
     },
     "oldPath": {
       "type": "string",

@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "redirections",
+  "info": {
+    "singularName": "redirection",
+    "pluralName": "redirections",
+    "displayName": "Redirection",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "newPath": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "regex": "^\\/(?:[a-zA-Z0-9/-]+(?:\\.[a-zA-Z]+)?|)$"
+    },
+    "oldPath": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "regex": "^\\/[a-zA-Z0-9/-]+(?:\\.[a-zA-Z]+)?$"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "permanent_redirect",
+        "temporary_redirect",
+        "rewrite"
+      ],
+      "default": "permanent_redirect",
+      "required": true
+    }
+  }
+}

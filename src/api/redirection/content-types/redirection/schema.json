@@ -15,7 +15,7 @@
     "newPath": {
       "type": "string",
       "required": true,
-      "unique": true,
+      "unique": false,
       "regex": "^\\/(?:[a-zA-Z0-9/-]+(?:\\.[a-zA-Z]+)?|)$"
     },
     "oldPath": {

@@ -2,7 +2,8 @@
   "collectionName": "components_sections_previews",
   "info": {
     "displayName": "Preview",
-    "icon": "stack"
+    "icon": "stack",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -20,29 +21,23 @@
       "required": true,
       "component": "elements.link"
     },
-    "image_1": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+    "media_1": {
+      "type": "relation",
+      "required": true,
+      "relation": "oneToOne",
+      "target": "api::medias.media"
     },
-    "image_2": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+    "media_2": {
+      "type": "relation",
+      "required": true,
+      "relation": "oneToOne",
+      "target": "api::medias.media"
     },
-    "image_3": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+    "media_3": {
+      "type": "relation",
+      "required": true,
+      "relation": "oneToOne",
+      "target": "api::medias.media"
     }
   }
 }

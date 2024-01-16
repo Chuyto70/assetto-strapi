@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sections_carousel_alts",
+  "info": {
+    "displayName": "Carousel_alt",
+    "icon": "picture",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Carousel_item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.carousel-item",
+      "required": true,
+      "min": 5,
+      "max": 5
+    }
+  }
+}

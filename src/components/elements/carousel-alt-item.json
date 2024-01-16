@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_elements_carousel_alt_items",
+  "info": {
+    "displayName": "Carousel_alt_item",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "href": {
+      "type": "string",
+      "regex": "^(https?|mailto):\\/\\/[^\\s/$.?#].[^\\s]*$|^\\/?([^\\s/$.?#].[^\\s]*)?$",
+      "required": false
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "featured__tag_text": {
+      "type": "string",
+      "required": false
+    },
+    "featured_text": {
+      "type": "string"
+    }
+  }
+}

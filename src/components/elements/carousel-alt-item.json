@@ -34,7 +34,7 @@
       "default": false,
       "required": true
     },
-    "featured__tag_text": {
+    "featured_tag_text": {
       "type": "string",
       "required": false
     },

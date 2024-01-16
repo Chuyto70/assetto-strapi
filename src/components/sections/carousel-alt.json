@@ -10,7 +10,7 @@
     "Carousel_item": {
       "type": "component",
       "repeatable": true,
-      "component": "elements.carousel-item",
+      "component": "elements.carousel-alt-item",
       "required": true,
       "min": 5,
       "max": 5

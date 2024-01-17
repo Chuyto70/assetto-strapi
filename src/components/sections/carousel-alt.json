@@ -7,12 +7,12 @@
   },
   "options": {},
   "attributes": {
-    "Carousel_item": {
+    "items": {
       "type": "component",
       "repeatable": true,
       "component": "elements.carousel-alt-item",
       "required": true,
-      "min": 5,
+      "min": 2,
       "max": 5
     }
   }

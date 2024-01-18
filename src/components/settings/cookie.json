@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_settings_cookies",
+  "info": {
+    "displayName": "cookie",
+    "icon": "write"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "mandatory": {
+      "type": "boolean",
+      "required": true
+    },
+    "default": {
+      "type": "enumeration",
+      "enum": [
+        "granted",
+        "denied"
+      ],
+      "required": true
+    }
+  }
+}

@@ -130,7 +130,8 @@
         "sections.display",
         "sections.testimonials",
         "elements.link",
-        "sections.media-grid-alt"
+        "sections.media-grid-alt",
+        "sections.carousel-alt"
       ]
     },
     "metadata": {

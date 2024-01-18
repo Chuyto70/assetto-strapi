@@ -433,6 +433,17 @@
         }
       },
       "type": "text"
+    },
+    "cookies": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "settings.cookie",
+      "required": true
     }
   }
 }

@@ -56,6 +56,25 @@
       ],
       "default": "primary",
       "required": false
+    },
+    "relationship": {
+      "type": "enumeration",
+      "enum": [
+        "alternate",
+        "author",
+        "bookmark",
+        "external",
+        "help",
+        "license",
+        "next",
+        "nofollow",
+        "noopener",
+        "noreferrer",
+        "prev",
+        "search",
+        "tag"
+      ],
+      "required": false
     }
   }
 }

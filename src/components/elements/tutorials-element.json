@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_elements_tutorials_elements",
+  "info": {
+    "displayName": "tutorials_element"
+  },
+  "options": {},
+  "attributes": {
+    "tutorials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tutorial.tutorial"
+    }
+  }
+}

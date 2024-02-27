@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sections_latest_tutorials",
+  "info": {
+    "displayName": "Latest Tutorials",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tutorials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tutorial.tutorial"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

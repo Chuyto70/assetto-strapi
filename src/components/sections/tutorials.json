@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_sections_tutorials",
+  "info": {
+    "displayName": "Tutorials_carousel",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text_below": {
+      "type": "string",
+      "required": true
+    },
+    "tutorials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tutorial.tutorial"
+    },
+    "url_list_tutorials": {
+      "type": "string",
+      "required": true,
+      "unique": false,
+      "default": "tutorial-list"
+    }
+  }
+}

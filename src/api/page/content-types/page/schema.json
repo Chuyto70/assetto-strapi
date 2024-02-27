@@ -65,7 +65,9 @@
         "sections.testimonials",
         "elements.link",
         "sections.media-grid-alt",
-        "sections.carousel-alt"
+        "sections.carousel-alt",
+        "sections.tutorials",
+        "sections.latest-tutorials"
       ]
     },
     "metadata": {
